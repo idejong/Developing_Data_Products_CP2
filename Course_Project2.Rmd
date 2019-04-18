@@ -1,0 +1,24 @@
+---
+title: "Course Assignment 3"
+author: "I_dejong"
+date: "18 april 2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(plotly)
+```
+
+## Scatterplot of the iris dataset
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+p <- plot_ly(data = iris, x = ~Sepal.Length, y = ~Petal.Length, color = ~Species, colors = "Set1")
+p
+```
+
+## Additional information
+- The scatterplot shows the Sepal.length on the X axes and the Petal.length on the Y axes.
+- Coloring is done based on the Species.
+- The scatterplot is created using the R packages Plotly.
+
+## Thank you!
